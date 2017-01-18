@@ -6,7 +6,8 @@ You must have
 - Bower -> https://bower.io/ installed
 
 After install everything, just type: 
-npm install 
-and then, change your path to app/ and type bower install
+- npm install 
+- and then, change your path to app/ and type bower install
+- return to the principal path of the project and type gulp
 
 With the gulp task, the browser will reload automatically  if one file (.css .js .scss) have a change
