@@ -1,5 +1,5 @@
 {
-  "name": "sysproaa-angular-material",
+  "name": "angular-material-example",
   "version": "0.1.1",
   "description": "Creating new project with Angular Material and Gulp for task manager",
   "main": "index.js",
