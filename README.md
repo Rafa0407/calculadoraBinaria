@@ -8,3 +8,5 @@ You must have
 After install everything, just type: 
 npm install 
 and then, change your path to app/ and type bower install
+
+With the gulp task, the browser will reload automatically  if one file (.css .js .scss) have a change
