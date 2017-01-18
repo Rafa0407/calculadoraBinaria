@@ -1,0 +1,16 @@
+{
+  "name": "sysproaa-angular-material",
+  "version": "0.1.1",
+  "description": "Creating new project with Angular Material and Gulp for task manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafa Sequeira",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
