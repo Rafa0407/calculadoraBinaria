@@ -1,4 +1,4 @@
-This is my first contribution on github, with this starter project you can do a single app using Angular Material as a UI Component framework and Angular.js, 
+This is my first contribution on github, with this starter project you can do a single app using Angular js, Angular Material as a UI Component framework, ui-router -> https://scotch.io/tutorials/angular-routing-using-ui-router. 
 I implement Gulp for task manager. 
 
 You must have 
