@@ -10,11 +10,17 @@
 		vm.s2;
 		vm.r1;
 		vm.r2;
+		vm.m1;
+		vm.m2; 
 
 		vm.resultadoSumaBinario = 0;
 		vm.resultadoSumaDecimal = 0;
 		vm.resultadoRestaDecimal = 0;
 		vm.resultadoRestaBinaria = 0;
+		vm.resultadoMultiplicacionBinaria = 0;
+		vm.resultadoMultiplicacionDecimal = 0;
+		vm.resultadoDivBin = 0;
+		vm.resultadoDivDec = 0;
 
 
 		//SCRIPT CONVERTIR BINARIO A DECIMAL
@@ -40,11 +46,11 @@
 
 		//SCRIPT CONVERTIR DECIMAL A BINARIO
 		vm.convertir_entero = function (valor){
-			var resul_div = [];
-			var entradas = 0;
-			var resultado_binario = '';
+			let resul_div = [];
+			let entradas = 0;
+			let resultado_binario = '';
 			while(valor > 0){
-				residuo = parseInt(valor % 2);
+				let residuo = parseInt(valor % 2);
 				valor = parseInt(valor/2);
 				resul_div[entradas] = residuo;
 				entradas++;
@@ -117,6 +123,41 @@
 				vm.resultadoSumaDecimal = 0;
 			}
 
+		} 
+
+		vm.multiplicacionBinaria = function(m1, m2){
+			let res =0;
+			let multi1 = vm.convertir_binario(m1);
+			let multi2 = vm.convertir_binario(m2);
+			console.log(multi1);
+			console.log(multi2);
+			if(multi1 && multi2 != undefined){
+				res = multi1 * multi2;
+				console.log(res); 
+				vm.resultadoMultiplicacionDecimal = res;
+	
+				vm.resultadoMultiplicacionBinaria = vm.convertir_entero(res);
+				console.log(vm.convertir_entero(res));	
+			}
+			else {
+				vm.resultadoMultiplicacionBinaria = 0; 
+				vm.resultadoMultiplicacionDecimal = 0; 
+			}
+
+			
+		} 
+		vm.divBinaria = function (d1 , d2){
+			let res =0;
+			let div1 = vm.convertir_binario(d1);
+			let div2 = vm.convertir_binario(d2); 
+			if(d2 == 0){
+				alert("No Se permite división entre 0")
+			}
+			else {
+				res = div1/div2;
+				vm.resultadoDivDec = res; 
+				vm.resultadoDivBin = vm.convertir_entero(res);
+			}
 		}
 
 		//SCRIPT PARA RESTAR BINARIOS
